@@ -1,0 +1,12 @@
+on: workflow_dispatch
+
+jobs:
+  portainerctl_job:
+    runs-on: ubuntu-latest
+    name: portainerctl
+    steps:
+      - name: Print help
+        id: hello
+        uses: stevensbkang/portainerctl@v0.0.1
+        with:
+          command: 'help'

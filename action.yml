@@ -1,0 +1,14 @@
+name: 'Portainer CLI'
+description: 'A GitHub Action that allows you to interact with Portainer over REST APIs using the CLI.'
+branding:
+  icon: 'command'
+  color: 'red'
+inputs:
+  command:
+    description: 'portainerctl command to run'
+    required: true
+runs:
+  using: 'docker'
+  image: 'docker://stevensbkang/portainerctl:0.0.1'
+  args:
+  - ${{ inputs.command }}
