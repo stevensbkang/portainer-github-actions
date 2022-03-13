@@ -10,6 +10,8 @@ A GitHub Action that allows you to interact with Portainer over REST APIs using 
 
 ## Example usage
 
+```yaml
 uses: stevensbkang/portainerctl@v0.0.1
 with:
   command: help
+```
