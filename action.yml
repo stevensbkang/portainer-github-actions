@@ -9,6 +9,6 @@ inputs:
     required: true
 runs:
   using: 'docker'
-  image: 'docker://stevensbkang/portainerctl:0.0.1'
+  image: 'docker://ssbkang/portainerctl:0.0.1'
   args:
   - ${{ inputs.command }}
