@@ -7,6 +7,6 @@ jobs:
     steps:
       - name: Print help
         id: hello
-        uses: stevensbkang/portainerctl@v0.0.1
+        uses: stevensbkang/portainer-github-actions@v0.0.1
         with:
           command: 'help'
